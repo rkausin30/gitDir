@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body> 
+        <main>
+            <h1>
+                <span id="generate">Generate a </span><br/>
+                <span id="randomPassword">random password</span>
+            </h1>
+            <p>Never use an insecure password again</p>
+
+            <button id="toggle-el">Include Symbols & Numbers</button>
+            <button id="pw-length-button" onclick="changePwLength()">Enter Password Length </button>
+            <input id="pw-length" size="1" value="15"></input>
+            <br/><br/>
+            <button id="password-generator-button" onclick="generatePasswords()">Generate passwords</button>
+            <hr>
+            <div id="passwords">
+                <div id="pw1-el"></div>
+                <div id="pw2-el"></div>
+            </div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
